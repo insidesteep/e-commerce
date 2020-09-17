@@ -118,7 +118,28 @@ body {
   min-height: 53px;
 }
 
-.menu-categories__item:hover {
-  font-family: "SFProDisplay-Semibold";
-  border-bottom: 1px solid #1c62cd;
+.menu-categories__link {
+  padding: 15px 0 14px;
+  position: relative;
+}
+
+.menu-categories__link::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  left: auto;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: #1c62cd;
+  transition: all .5s;
+}
+
+.menu-categories__link:hover::before {
+  /* font-family: "SFProDisplay-Semibold"; */
+  color: #000;
+  font-weight: bold;
+  width: 100%;
+  right: auto;
+  left: 0;
 }
