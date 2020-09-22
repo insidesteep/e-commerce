@@ -77,7 +77,7 @@
             </div>
         </div>
     </header>
-    <section class="banner-section">
+    <section class="banner-section page-section">
         <div class="container">
             <div class="banner-section__inner">
                 <div class="banner-section__slider">
@@ -123,10 +123,42 @@
         </div>
     </section>
 
+    <section class="search page-section">
+        <div class="container">
+            <div class="search__inner">
+                <div class="search__tabs">
+                    <a href="#tab-1" class="search__tabs-item search__tabs-item--active">Поиск по  номеру</a>
+                    <a href="#tab-2" class="search__tabs-item">Поиск по марке</a>
+                    <a href="#tab-3" class="search__tabs-item">Поиск по названию товара</a>
+                </div>
+                <div class="search__content">
+                    <div id='tab-1' class="search__content-item search__content-item--active">
+                        <form action="" class="search__content-form">
+                            <input class='search__content-input' type="text" placeholder="Введите номер">
+                            <button class='search__content-btn'>искать</button>
+                        </form>
+                    </div>
+                    <div id='tab-2' class="search__content-item">
+                        <form action="" class="search__content-form">
+                            <input class='search__content-input' type="text" placeholder="Введите марку">
+                            <button class='search__content-btn'>искать</button>
+                        </form>
+                    </div>
+                    <div id='tab-3' class="search__content-item">
+                        <form action="" class="search__content-form">
+                            <input class='search__content-input' type="text" placeholder="Введите название товара">
+                            <button class='search__content-btn'>искать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/slick.min.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/tab.js"></script>
 </body>
 
 
