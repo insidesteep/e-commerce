@@ -376,3 +376,70 @@ header {
     letter-spacing: 0.12em;
     left: -3px;
 }
+
+.categories__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.categories__item {
+    width: 370px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    padding: 20px 20px 14px;
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    transition: all 0.3s;
+}
+
+.categories__item:hover {
+    background: #FFFFFF;
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    border-radius: 3px;
+}
+
+.categories__item:hover .categories__item-title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    color: #1C62CD;
+}
+
+.categories__item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.categories__item-title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    color: #2F3035;
+}
+
+.categories__item-text {
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+}
+
+.categories__item-text::after {
+    content: url('../images/icons/link-arrow.svg');
+    padding-left: 2px;
+}
+
+.categories__item-img {
+    text-align: center;
+    width: 50%;
+}
+
+.categories__item-img img {
+    max-width: 100%;
+}
