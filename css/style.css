@@ -14,7 +14,8 @@ a {
 }
 
 ul,
-li {
+li,
+p {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -209,6 +210,9 @@ header {
     border: 1px solid #CDCDCD;
     border-radius: 3px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sale-item__top {
@@ -277,4 +281,36 @@ header {
 
 .sale-item__price {
     text-align: right;
+}
+
+.sale-item__title {
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0 55px;
+    margin-bottom: 7px;
+}
+
+.sale-item__footer {
+    background-color: #F0F0F4;
+    padding: 25px 20px;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.sale-item__footer span {
+    font-family: 'Barlow', sans-serif;
+    color: #1C62CD;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.banner-section__slider-img {
+    object-fit: cover;
+    min-height: 400px;
+}
+
+.sale-item__img {
+    object-fit: contain;
 }
