@@ -1,14 +1,14 @@
 $(function() {
-    $('.search__tabs-item').on('click', function(e) {
+    $('.tab').on('click', function(e) {
         e.preventDefault()
-        $('.search__tabs-item').removeClass('search__tabs-item--active')
-        $(this).addClass('search__tabs-item--active')
+        $('.tab').removeClass('tab--active')
+        $(this).addClass('tab--active')
 
-        $('.search__content-item').removeClass('search__content-item--active')
+        $('.tab-content').removeClass('tab-content--active')
 
         const tabId = $(this).attr('href')
 
-        $(tabId).addClass('search__content-item--active')
+        $(tabId).addClass('tab-content--active')
 
     })
 })

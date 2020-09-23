@@ -330,7 +330,7 @@ header {
     line-height: 24px;
 }
 
-.search__tabs-item--active {
+.search__tabs-item.tab--active {
     font-family: 'SFProDisplay-Bold', sans-serif;
     font-weight: 700;
     line-height: 24px;
@@ -342,7 +342,7 @@ header {
     display: none;
 }
 
-.search__content-item--active {
+.search__content-item.tab-content--active {
     display: block;
 }
 
@@ -442,4 +442,33 @@ header {
 
 .categories__item-img img {
     max-width: 100%;
+}
+
+.product__slider-wrapper {
+    position: relative;
+    width: 271px;
+    padding: 52px 20px 31px;
+}
+
+.product__item {
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.product__item-favorite {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.product__item-basket {
+    position: absolute
+}
+
+.product__item-title {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
 }
